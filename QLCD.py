@@ -28,9 +28,12 @@ class Window(QWidget):
 
         vbox = QVBoxLayout()
         self.lcd = QLCDNumber()
+        self.lcd.setStyleSheet('background-color:green')
+        #self.lcd.setStyleSheet('color:black')
 
         self.button = QPushButton("Random Number")
         self.button.clicked.connect(self.RandomGen)
+        self.button.setStyleSheet('background-color:red')
 
         vbox.addWidget(self.lcd)
         vbox.addWidget(self.button)
