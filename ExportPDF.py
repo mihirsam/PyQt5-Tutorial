@@ -114,7 +114,7 @@ class Window(QMainWindow):
         self.textEdit.print_(self.printer)
 
     def pdfExport(self):
-        fn, _= QFileDialog.getSaveFileName(self, "Export PDF", None, "PDF files (.pdf);;All Files(")
+        fn, _= QFileDialog.getSaveFileName(self, "Export PDF", None, "PDF files (.pdf);;All Files()")
 
         if fn != '':
             if QFileInfo(fn).suffix() == "":fn += '.pdf'
